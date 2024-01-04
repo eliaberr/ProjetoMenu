@@ -1,0 +1,22 @@
+body{
+    background-color: #C5C1C0;
+    font-family:'Arial';
+    margin: 5%;
+}
+
+.container{
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 3%;
+    border-radius: 0.5rem;
+}
+
+h1{
+    font-weight: normal;
+}
+
+.imgHome{
+    height: 50%;
+    width: 99%;
+    border-radius: 0.2rem;
+}
