@@ -10,14 +10,15 @@
     <div class="container">
         <img src="assets/home.jpg" alt="" class="imgHome">
         <h1>Menu - Faça A Sua Escolha</h1>
-    
-        <div class="partePratosPrincipais">
+        
+        <!-- TODO parte Pratos Principais -->
+        <div>
             <div>
                 <h3>Pratos Principais</h3>
                 <p>Todos os Pratos acompanham Arroz, Feijão e a Sobremesa do Dia</p>
             </div>
 
-            <div class="pratosPrincipais">
+            <div class="standard-box">
                 <div class="pratos">
                     <img src="assets/bife.jpg" class="imgPratos">
                     <p class="nomeDoPrato">Bife com Batata</p>
@@ -53,12 +54,76 @@
                         <button class="buttonQnt">+</button>
                     </div>
                 </div>
-          
+            </div>
+        </div>
+        
+        <!-- TODO parteAcompanhamentos -->
+        <div >
+            <div>
+                <h3>Acompanhamentos</h3>
+                <p>Porções Para Uma Pessoa</p>
             </div>
 
+            <div class="standard-box">
+                <div class="pratos">
+                    <img src="assets/farofa.jpg" class="imgPratos">
+                    <p class="nomeDoPrato">Farofa</p>
+                    <span class="preco">R$ 10,00</span>
+
+                    <div class="quantidade">
+                        <button class="buttonQnt">-</button>
+                        <span>0</span>
+                        <button class="buttonQnt">+</button>
+                    </div>
+                </div>
+
+                <div class="pratos">
+                    <img src="assets/salad.jpg" class="imgPratos">
+                    <p class="nomeDoPrato">Salada</p>
+                    <span class="preco">R$ 8,00</span>
+
+                    <div class="quantidade">
+                        <button class="buttonQnt">-</button>
+                        <span>0</span>
+                        <button class="buttonQnt">+</button>
+                    </div>
+                </div>
+
+                <div class="pratos">
+                    <img src="assets/torresmo.jpg" class="imgPratos">
+                    <p class="nomeDoPrato">Torresmo</p>
+                    <span class="preco">R$ 12,00</span>
+
+                    <div class="quantidade">
+                        <button class="buttonQnt">-</button>
+                        <span>0</span>
+                        <button class="buttonQnt">+</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- TODO Dados Pessoais -->
+        <div class="dados">
+            <h3>Dados Pessoais</h3>
+            <div>
+                <div>
+                    <input type="text" placeholder="Digite o Seu Nome">
+                    <input type="text" id="telefone" placeholder="Digite o Telefone">
+                    <input type="email" id="email" placeholder="Digite o Email">
+                </div>
+            </div>
+        </div>
+
+        <button class="buttonCalc">Calcular</button>
+
     </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    
+    <script src="js/mask.js"></script>
+
 
 </body>
 </html>

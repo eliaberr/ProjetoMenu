@@ -27,15 +27,12 @@ h1{
     border-radius: 0.5rem;
 }
 
-.pratosPrincipais{
+.standard-box{
     display: flex;
     justify-content: center;
-    
-}
-
-.partePratosPrincipais{
     border-radius: 0.5rem;
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5rem;
 }
 
 .pratos{
@@ -58,3 +55,34 @@ h1{
     color: #197931;
     font-weight: bold;
 }
+
+.dados{
+    border-radius: 0.5rem;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+input{
+    border: none;
+    height: 2rem;
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.buttonCalc{
+    background-color:#0069D9 ;
+    border: none;
+    color: #FFFFFF;
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
