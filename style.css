@@ -20,3 +20,41 @@ h1{
     width: 99%;
     border-radius: 0.2rem;
 }
+
+.imgPratos{
+    width: 200px;
+    padding: 0px 8px 0px 8px;
+    border-radius: 0.5rem;
+}
+
+.pratosPrincipais{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.partePratosPrincipais{
+    border-radius: 0.5rem;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pratos{
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.nomeDoPrato{
+    margin-top: -2px;
+    margin-bottom: -1px;
+}
+
+.buttonQnt{
+    border: none;
+    margin: 10px 10px 15px;
+}
+
+.preco{
+    color: #197931;
+    font-weight: bold;
+}
