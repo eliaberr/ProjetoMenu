@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,38 +22,50 @@
 
             <div class="standard-box">
                 <div class="pratos">
-                    <img src="assets/bife.jpg" class="imgPratos">
-                    <p class="nomeDoPrato">Bife com Batata</p>
-                    <span class="preco">R$ 30,00</span>
+                    <div>
+                        <img src="assets/bife.jpg" class="imgPratos">
+                        <p class="nomeDoPrato">Bife com Batata</p>
+                        <span class="preco" id="preco">R$ 30,00</span>
+                    </div>
 
-                    <div class="quantidade">
-                        <button class="buttonQnt">-</button>
-                        <span>0</span>
-                        <button class="buttonQnt">+</button>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity"
+                        value="0" title="Qty" class="input-text qty text" size="4"
+                        pattern="" inputmode="" readonly id="bifeComBatata">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
 
                 <div class="pratos">
-                    <img src="assets/coxa.jpg" class="imgPratos">
-                    <p class="nomeDoPrato">Coxa de Frango Crocante</p>
-                    <span class="preco">R$ 25,00</span>
+                    <div>
+                        <img src="assets/coxa.jpg" class="imgPratos">
+                        <p class="nomeDoPrato">Coxa de Frango Crocante</p>
+                        <span class="preco">R$ 25,00</span>
+                    </div>
 
-                    <div class="quantidade">
-                        <button class="buttonQnt">-</button>
-                        <span>0</span>
-                        <button class="buttonQnt">+</button>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity"
+                        value="0" title="Qty" class="input-text qty text" size="4"
+                        pattern="" inputmode="" readonly id="coxaDeFrango">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
 
                 <div class="pratos">
-                    <img src="assets/panela.jpg" class="imgPratos">
-                    <p class="nomeDoPrato">Carne de Panela</p>
-                    <span class="preco">R$ 22,00</span>
+                    <div>
+                        <img src="assets/panela.jpg" class="imgPratos">
+                        <p class="nomeDoPrato">Carne de Panela</p>
+                        <span class="preco">R$ 22,00</span>
+                    </div>
 
-                    <div class="quantidade">
-                        <button class="buttonQnt">-</button>
-                        <span>0</span>
-                        <button class="buttonQnt">+</button>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity"
+                        value="0" title="Qty" class="input-text qty text" size="4"
+                        pattern="" inputmode="" readonly id="carneDePanela">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
             </div>
@@ -66,38 +80,50 @@
 
             <div class="standard-box">
                 <div class="pratos">
-                    <img src="assets/farofa.jpg" class="imgPratos">
-                    <p class="nomeDoPrato">Farofa</p>
-                    <span class="preco">R$ 10,00</span>
-
-                    <div class="quantidade">
-                        <button class="buttonQnt">-</button>
-                        <span>0</span>
-                        <button class="buttonQnt">+</button>
+                    <div>
+                        <img src="assets/farofa.jpg" class="imgPratos">
+                        <p class="nomeDoPrato">Farofa</p>
+                        <span class="preco">R$ 10,00</span>
+                    </div>
+                    
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity"
+                        value="0" title="Qty" class="input-text qty text" size="4"
+                        pattern="" inputmode="" readonly id="farofa">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
 
                 <div class="pratos">
-                    <img src="assets/salad.jpg" class="imgPratos">
-                    <p class="nomeDoPrato">Salada</p>
-                    <span class="preco">R$ 8,00</span>
+                    <div>
+                        <img src="assets/salad.jpg" class="imgPratos">
+                        <p class="nomeDoPrato">Salada</p>
+                        <span class="preco">R$ 8,00</span>
+                    </div>
 
-                    <div class="quantidade">
-                        <button class="buttonQnt">-</button>
-                        <span>0</span>
-                        <button class="buttonQnt">+</button>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity"
+                        value="0" title="Qty" class="input-text qty text" size="4"
+                        pattern="" inputmode="" readonly id="salada">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
 
                 <div class="pratos">
-                    <img src="assets/torresmo.jpg" class="imgPratos">
-                    <p class="nomeDoPrato">Torresmo</p>
-                    <span class="preco">R$ 12,00</span>
+                    <div>
+                        <img src="assets/torresmo.jpg" class="imgPratos">
+                        <p class="nomeDoPrato">Torresmo</p>
+                        <span class="preco">R$ 12,00</span>
+                    </div>
 
-                    <div class="quantidade">
-                        <button class="buttonQnt">-</button>
-                        <span>0</span>
-                        <button class="buttonQnt">+</button>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" name="quantity"
+                        value="0" title="Qty" class="input-text qty text" size="4"
+                        pattern="" inputmode="" readonly id="torresmo">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
             </div>
@@ -108,21 +134,25 @@
             <h3>Dados Pessoais</h3>
             <div>
                 <div>
-                    <input type="text" placeholder="Digite o Seu Nome">
-                    <input type="text" id="telefone" placeholder="Digite o Telefone">
-                    <input type="email" id="email" placeholder="Digite o Email">
+                    <input type="text" id="nome" placeholder="Digite o Seu Nome">
+                    <input type="text" id="telefone" placeholder="Digite o Seu Telefone">
+                    <input type="email" id="email" placeholder="Digite o Seu Email">
                 </div>
             </div>
         </div>
 
-        <button class="buttonCalc">Calcular</button>
+        <button class="buttonCalc" onclick="calc()">Calcular</button>
 
+        <div id="dadosFinal">
+
+        </div>
     </div>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     
     <script src="js/mask.js"></script>
+    <script src="js/quant.js"></script>
 
 
 </body>
